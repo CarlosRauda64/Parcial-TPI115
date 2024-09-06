@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header, .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.user-options button {
+    background-color: #f56c0b;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-options img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.anime-title h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.anime-title span {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.award {
+    font-size: 16px;
+    color: #f56c0b;
+}
+
+.rating p {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: #f56c0b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.availability p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.start-watch {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.start-watch img {
+    height: 120px;
+    margin-right: 20px;
+}
+
+.start-watch button {
+    background-color: #f56c0b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}

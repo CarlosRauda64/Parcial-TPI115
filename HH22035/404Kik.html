@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Página no encontrada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 72px;
+        }
+        p {
+            font-size: 24px;
+        }
+        #url {
+            color: #555;
+            font-weight: bold;
+        }
+        #suggestions {
+            margin-top: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! No hemos podido encontrar la página que buscas.</p>
+    <p>La URL solicitada de Raúl herrera no existe en este servidor.</p>
+    <div id="suggestions">
+        <p>Tal vez quieras intentar alguna de las siguientes opciones:</p>
+        <ul>
+            <li><a href="/">Volver a la página de inicio</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Obtener la URL solicitada
+        document.getElementById('url').textContent = window.location.href;
+
+        // Agregar un poco de aleatoriedad para hacerlo más dinámico
+        const messages = [
+            "Tal vez escribiste mal la dirección.",
+            "¿Seguro que llegaste aquí por el camino correcto?",
+            "Es posible que esta página haya sido movida o eliminada.",
+        ];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById('suggestions').insertAdjacentHTML('beforeend', `<p>${randomMessage}</p>`);
+    </script>
+</body>
+</html>
+
+
