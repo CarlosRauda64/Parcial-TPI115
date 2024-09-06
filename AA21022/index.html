@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo MVC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modelo MVC</h1>
+        <nav>
+            <ul>
+                <li><a href="#modelo">Modelo</a></li>
+                <li><a href="#vista">Vista</a></li>
+                <li><a href="#controlador">Controlador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>¿Qué es el Modelo MVC?</h2>
+        <p>El modelo MVC (Modelo-Vista-Controlador) es un patrón de arquitectura de software que separa una aplicación en tres componentes principales: el Modelo, la Vista y el Controlador. Este patrón facilita la organización del código y la reutilización de componentes, lo que lo hace ideal para el desarrollo de aplicaciones web.</p>
+    </section>
+
+    <section id="modelo">
+        <h2>Modelo</h2>
+        <p>El Modelo es la parte de la aplicación que maneja la lógica de negocio y los datos. En términos sencillos, se encarga de gestionar cómo se guardan, recuperan y manipulan los datos. Por ejemplo, en una aplicación de tienda en línea, el Modelo podría manejar las operaciones relacionadas con los productos, como agregar nuevos productos, calcular precios, o manejar inventarios.</p>
+        <p><strong>Ejemplo práctico:</strong></p>
+        <ul>
+            <li>El Modelo define que un producto tiene un nombre, un precio, y una cantidad en stock.</li>
+            <li>Si un usuario compra un producto, el Modelo actualiza la cantidad en stock.</li>
+            <li>El Modelo también podría validar que no se puedan vender productos si no hay stock disponible.</li>
+        </ul>
+    </section>
+
+    <section id="vista">
+        <h2>Vista</h2>
+        <p>La Vista es la capa de la aplicación que se encarga de presentar los datos al usuario. Es la interfaz gráfica de usuario (UI) de la aplicación, que se puede ver e interactuar. La Vista recibe los datos del Modelo y los muestra al usuario, además de recibir las interacciones del usuario (clics, entradas de texto, etc.) y enviarlas al Controlador.</p>
+        <p><strong>Ejemplo práctico:</strong></p>
+        <ul>
+            <li>La Vista muestra una lista de productos con su nombre, precio y cantidad disponible.</li>
+            <li>Si el usuario hace clic en un producto, la Vista le muestra los detalles del mismo.</li>
+            <li>Cuando el usuario decide comprar, la Vista recoge esta acción y se la pasa al Controlador.</li>
+        </ul>
+    </section>
+
+    <section id="controlador">
+        <h2>Controlador</h2>
+        <p>El Controlador es el intermediario entre el Modelo y la Vista. Se encarga de recibir las entradas del usuario desde la Vista, procesarlas y luego enviar la información apropiada al Modelo o actualizar la Vista en consecuencia. Es el encargado de dirigir el flujo de la aplicación.</p>
+        <p><strong>Ejemplo práctico:</strong></p>
+        <ul>
+            <li>El usuario hace clic en "Comprar". El Controlador recibe esta acción.</li>
+            <li>El Controlador le pide al Modelo que verifique si el producto está disponible y, si es así, procede con la compra.</li>
+            <li>El Controlador luego actualiza la Vista para reflejar que la compra se ha realizado con éxito.</li>
+        </ul>
+    </section>
+
+    <section id="diagrama">
+        <h2>Diagrama del Modelo MVC</h2>
+        <p>Un diagrama simple puede ayudar a entender cómo interactúan el Modelo, la Vista y el Controlador:</p>
+        <img src="mvc-diagram.png" alt="Diagrama del Modelo MVC">
+        <p>En el diagrama:</p>
+        <ul>
+            <li>El usuario interactúa con la Vista.</li>
+            <li>La Vista envía la entrada del usuario al Controlador.</li>
+            <li>El Controlador procesa la entrada y actualiza el Modelo.</li>
+            <li>El Modelo notifica a la Vista cuando los datos han cambiado.</li>
+            <li>La Vista se actualiza para reflejar los nuevos datos.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024  Sitio de Daniel Avelar</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
